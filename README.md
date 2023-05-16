@@ -7,7 +7,7 @@ Include the date you created this project and README file.
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+in the python file "bikeshare.py", a program is written for the user to check the database of bikeshare information in three different cities.
 
 ### Files used
 Include the files used
