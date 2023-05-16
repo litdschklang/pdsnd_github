@@ -221,6 +221,7 @@ def read_raw_data(df):
     """Displays raw data to the user."""
     read_data = input('\nWould you like to check 5 lines of the raw data? Enter yes or no.\n')
     if read_data.lower() == 'yes':
+        pd.set_option('display.max_columns',200)
         print(df.head(5))
         i = 5
         while True:
