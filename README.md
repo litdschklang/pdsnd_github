@@ -10,7 +10,8 @@ Replace the Project Title
 in the python file "bikeshare.py", a program is written for the user to check the database of bikeshare information in three different cities.
 
 ### Files used
-Include the files used
+bikeshare.py
+csv databases
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
