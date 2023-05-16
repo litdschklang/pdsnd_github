@@ -28,18 +28,18 @@ def get_filters():
 
     # get user input for filter criteria
     while True:
-        filter_criteria = input('\nWould you like to filter the data by month, day, or not at all? Type "both" for both, type "none" for not at all:\n').lower()
+        filtered_criteria = input('\nWould you like to filter the data by month, day, or not at all? Type "both" for both, type "none" for not at all:\n').lower()
         criteria_list = ['day','month','both','none']
-        if filter_criteria not in criteria_list:
+        if filtered_criteria not in criteria_list:
             print('Sorry, the criteria you typed does not exist! Please try again.')
             continue
-        elif filter_criteria == 'day':
+        elif filtered_criteria == 'day':
             month = 'all'
             break
-        elif filter_criteria == 'month':
+        elif filtered_criteria == 'month':
             day = 'all'
             break
-        elif filter_criteria == 'none':
+        elif filtered_criteria == 'none':
             month = 'all'
             day = 'all'
             break
@@ -47,7 +47,7 @@ def get_filters():
             break
 
     # get user input for month (all, january, february, ... , june)
-    while filter_criteria == 'month' or filter_criteria == 'both':
+    while filtered_criteria == 'month' or filtered_criteria == 'both':
         month = input('\nPlease enter a month (From "January" till "June"):\n').lower()
         month_list = ['january', 'february', 'march', 'april', 'may', 'june']
         if month not in month_list:
@@ -57,7 +57,7 @@ def get_filters():
             break
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    while filter_criteria == 'day' or filter_criteria == 'both':
+    while filtered_criteria == 'day' or filtered_criteria == 'both':
         day = input('\nPlease enter a day of week (From "Monday" till "Sunday"):\n').lower()
         day_list = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
         if day not in day_list:
